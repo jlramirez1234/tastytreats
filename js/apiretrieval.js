@@ -1,5 +1,10 @@
-const desserts = fetch(`https://freerandomapi.cyclic.app/api/v1/desserts`);
-const cookies = fetch('https://freerandomapi.cyclic.app/api/v1/desserts?category=Cookie');
-const donuts = fetch ('https://freerandomapi.cyclic.app/api/v1/desserts?category=Donut');
-const iceCream = fetch ('https://freerandomapi.cyclic.app/api/v1/desserts?category=Ice_Cream');
+export const callingDessert = async () => {
+    const routes = ['?category=Cookie', '?category=Donut', '?category=Ice_Cream'];
+    const baseURL = 'https://freerandomapi.cyclic.app/api/v1/desserts';
+    const res = await Promise.all(
+    routes.map((route) => fetch(`${baseURL}${route}`).then(res => res.json()).then(response => response.data)));
+    console.log(res.flat())
+    return res.flat();
+}
 
+callingDesserts();

@@ -1,8 +1,8 @@
-import { callingDessert } from "./apiretrieval.js";
+import { callingDessert } from "./apiretrieval";
 
 const data = callingDessert();
 
-
+console.log(data);
 
 //Carousel
 const slides = document.querySelectorAll('.card-container');
