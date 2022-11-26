@@ -1,4 +1,4 @@
-import { callingDessert } from "./apiretrieval";
+import { callingDessert } from "./apiretrieval.js";
 
 const data = callingDessert();
 

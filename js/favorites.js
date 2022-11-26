@@ -44,7 +44,7 @@ update();
 //What you can do is instead of using things on the id, you can use the css.
 
 function removingRedHeart(){
-  let icon = document.getElementById('#card-info')
+  let icon = document.getElementById('card-info')
 
    console.log(icon);
      
