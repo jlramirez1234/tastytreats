@@ -261,7 +261,7 @@ header .header-list{
 .fa-solid{
     color: white;
     padding:20px;
-    z-index: 1;
+    z-index: 0;
 }
 .fa-solid:hover{
     cursor: pointer;
@@ -398,6 +398,9 @@ header .header-list{
 }
 .hours{
      width: 50%
+}
+.hours h6{
+    text-decoration: underline;
 }
 .hours h5, .hours h6{
     margin: 8px;

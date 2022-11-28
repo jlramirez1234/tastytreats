@@ -6,10 +6,14 @@ async function callingDesserts() {
       fetch(`${baseURL}${route}`)
         .then((res) => res.json())
         .then((response) => response.data)
+        .then((data) => data.map((info) => {
+          info[`isHearted`] = false;
+          return info;
+        }))
     )
   );
   console.log(res.flat());
   return res.flat();
-};
+}
 
 callingDesserts();
