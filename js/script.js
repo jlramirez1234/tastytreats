@@ -25,4 +25,4 @@ for( const elm of closeModal ){
     })
 };
 
-//fetching cookies 
+

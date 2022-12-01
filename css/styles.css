@@ -221,15 +221,16 @@ header .header-list{
     color: black;
 }
 
-.fa-heart, .fa-regular{
+.hearted{
     color: red;
     position: relative;
     top: 10px;
 }
-.hearted{   
+.hearts{
     color: blue;
+    position: relative;
+    top: 10px;
 }
-
 .fa-regular:hover{
     cursor: pointer;
 }
